@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Nutrição IMC</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+		<header class="header">			
+			<h2 class="titulo">Feira de Saúde</h2>			
+		</header>
+		<section id="semborda" class="container" >
+			<h2 class="primeiroTitulo">Pra ser feliz</h2>
+			<img src="img/praSerFeliz.JPG" class="logo">
+		</section>		
+					
+		<main>
+			<section class="container">				 
+					<h2>Calcula IMC</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Classificação do estado nutricional:</th>
+								<th>IMC ADULTO</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="classificaçãoGrave">
+								<td>Desnutrição grave</td>
+								<td> Menor que 16</td>							
+							</tr>
+							<tr class="classificaçãoGrave">
+								<td>Desnutrição moderada</td>
+								<td>Entre 16 e 17</td>							
+							</tr>
+							<tr class="classificaçãoMedia">
+								<td>Desnutrição leve</td>
+								<td>Entre 17 e 18,5</td>							
+							</tr>
+							<tr class="classificaçãoOtima">
+								<td>Estrófico (Adequado)</td>
+								<td>Entre 18,5 e 24,9</td>							
+							</tr>
+							<tr class="classificaçãoMedia">
+								<td>Sobrepeso</td>
+								<td>Entre 25 e 29,9</td>							
+							</tr>
+							<tr class="classificaçãoGrave">
+								<td>Obesidade classe 1</td>
+								<td>Entre 30 e 34,9</td>							
+							</tr>
+							<tr class="classificaçãoGrave">
+								<td>Obesidade classe 2</td>
+								<td>Entre 35 e 39,0</td>							
+							</tr>
+							<tr class="classificaçãoGrave">
+								<td>Obesidade classe 3 </td>
+								<td>Maior ou igual a 40</td>							
+							</tr>
+						<thead>
+							<tr>
+								<th>Classificação do estado nutricional:</th>
+								<th>IMC IDOSO</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="classificaçãoGrave">
+								<td>Magreza</td>
+								<td>Menor que 22</td>							
+							</tr>
+							<tr class="classificaçãoOtima">
+								<td>Eutrofia</td>
+								<td>Entre 22 e 27</td>							
+							</tr>
+							<tr class="classificaçãoGrave">
+								<td>Sobrepeso</td>
+								<td>Maior que 27</td>							
+							</tr>
+						</tbody>
+						</tbody>
+					</table>
+
+					<label for="filtrar-tabela">Filtre:</label>
+					<input type="text" name="filtro" id="filtrar-tabela"
+					placeholder="Digite o nome do paciente">
+					<table id="table">
+						<thead id="thead">
+							<tr>
+								<th>Nome</th>
+								<th>Peso(kg)</th>
+								<th>Altura(m)</th>
+								<!-- <th>Gordura Corporal(%)</th> -->
+								<th>IMC</th>
+							</tr>
+						</thead>
+						<tbody id="tabela-pacientes">
+							<tr class="paciente" id="primeiro-paciente">
+								<td class="info-nome">Exemplo</td>
+								<td class="info-peso">100</td>
+								<td class="info-altura">2.00</td>
+								<!-- <td class="info-gordura">10</td> -->
+								<td class="info-imc">0</td>
+							</tr>										
+						</tbody>
+					</table>
+				</div><!--Setores-->
+
+				<span id="erro-ajax" class="invisivel">Erro ao buscar pacientes</span>
+				<button id="buscar-pacientes" class="botao bto-principal">Buscar pacinte</button>			
+			
+				<h2 id="titulo-form" class="tituloAdiciona">Adicionar novo participante</h2>
+				<ul id="mensagens-erro">
+				
+				</ul>
+				<form id="form-adiciona">
+					<div class="novo-paciente">
+						<label for="nome">Nome:</label>
+						<input id="nome" name="nome" type="text" placeholder="digite o nome do participante" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="peso">Peso:</label>
+						<input id="peso" name="peso" type="text" placeholder="digite o peso do participante" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="altura">Altura:</label>
+						<input id="altura" name="altura" type="text" placeholder="digite a altura do participante" class="campo campo-medio">
+					</div>					
+	
+					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+				</form>
+			</section>
+		</main>	
+
+		<script src="js/calcula-imc.js" ></script>
+		<script src="js/form.js"></script>
+		<script src="js/remove-paciente.js"></script>
+		<script src="js/filtra.js"></script>
+		<script src="js/buscar-pacientes.js"></script>
+
+	</body>
+</html>
