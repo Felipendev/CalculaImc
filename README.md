@@ -1,5 +1,6 @@
 # Calcula IMC
 ## Aplicação de calculo de IMC para feira de saúde
+## LINK: https://felipendev.github.io/CalculaImc/
 
 <img src="gif-FeiraDeSaude.gif">
 
