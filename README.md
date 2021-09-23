@@ -1,7 +1,7 @@
 # Calcula IMC
 ## Aplicação de calculo de IMC para feira de saúde
 
-<img src="img/gif-FeiraDeSaude.gif">
+<img src="gif-FeiraDeSaude.gif">
 
 
 ## Executar Projeto:
